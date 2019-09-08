@@ -18,6 +18,7 @@
 .center-content {
   justify-content: center;
   display: flex;
+  height: min-content;
 }
 body {
   font-family: "OpenSansRegular";
@@ -101,6 +102,7 @@ body {
   background-color: #122137;
   width: 85%;
   border-radius: 20px;
+  margin-bottom: 40px;
 }
 .exchange-card .top {
   padding: 30px;
@@ -146,14 +148,146 @@ input {
 }
 
 .features-holder {
-  /* max-width: 800px; */
-  background-color: #29c73c;
   height: 400px;
   display: flex;
   justify-content: center;
+  margin-top: -190px;
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translate(-50%); */
 }
-.out-card {
+/* .features-holder {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+} */
+.feature-cards {
+  width: 800px;
+  /* background-color: #173560; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-small {
+  width: 250px;
   background-color: #173560;
+  height: 250px;
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
   padding: 20px;
+  color: white;
+}
+.card-small p {
+  font-family: "OpenSansLight";
+  font-size: 15px;
+}
+.card-small img {
+  height: 60px;
+  padding-bottom: 8px;
+}
+.card-big {
+  width: 300px;
+  background-color: #173560;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  text-align: center;
+  padding: 20px 30px;
+  color: white;
+}
+.card-big p {
+  font-family: "OpenSansLight";
+  font-size: 15px;
+}
+.card-big img {
+  height: 90px;
+  padding-bottom: 8px;
+}
+#particles {
   width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+  position: absolute;
+}
+.clip-circle {
+  clip-path: circle(720px at 100px right);
+  /* OLD VALUE example: circle(245px, 140px, 50px); */
+  /* Yep, even the new clip-path has deprecated stuff. */
+}
+.clip-ellipse {
+  clip-path: ellipse(800px 600px at bottom right);
+  /* OLD VALUE example: ellipse(245px, 80px, 75px, 30px); */
+}
+@media only screen and (max-width: 1200px) {
+  .features-holder {
+    margin-top: -70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features-holder {
+    margin-top: 0px;
+    padding-top: 20px;
+    height: auto;
+  }
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.world-map {
+  background-image: url(../img/world-map-dots.png);
+  padding: 50px 0px;
+  /* margin-top */
+}
+.left-image img {
+  width: 100%;
+}
+.flex-list {
+  display: flex;
+  align-items: center;
+}
+.left-side {
+  background-color: white;
+  padding: 35px;
+  border-radius: 20px;
+}
+.left-side li {
+  margin-bottom: 15px;
+}
+.left-side h2 {
+  font-size: 35px;
+  font-family: "OpenSansLight";
+  margin: 20px 0px;
+}
+.left-side h2 span {
+  font-family: "OpenSansBold";
+}
+.left-side > ul > li > img {
+  width: 25px;
+  margin-right: 10px;
+}
+.left-side > div > img {
+  max-width: 150px;
+}
+.left-side p {
+  font-size: 20px;
+}
+.coming-soon {
+  margin-top: 15px;
+  font-family: "OpenSansBold" !important;
+  color: #1a4073;
+  letter-spacing: -2px;
+}
+.desc {
+  font-size: 14px !important;
+  margin-bottom: 20px;
 }
