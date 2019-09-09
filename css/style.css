@@ -291,3 +291,43 @@ input {
   font-size: 14px !important;
   margin-bottom: 20px;
 }
+footer {
+  height: auto;
+  background-image: url(../img/footer-bg.png);
+  background-size: cover;
+  padding: 80px 20px 0px;
+}
+.footer-CTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-CTA > div {
+  text-align: center;
+}
+.footer-CTA h2 {
+  font-size: 40px;
+  font-family: "OpenSansLight";
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.divider-green {
+  background-color: #5bd882;
+  width: 100px;
+  height: 4px;
+  margin: 20px 0px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+.footer-left {
+  margin-top: 50px;
+}
+.footer-left #logo {
+  width: 200px;
+}
+.footer-left #taxatec {
+  width: 250px;
+}
