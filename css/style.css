@@ -157,6 +157,7 @@ input {
   display: flex;
   justify-content: center;
   margin-top: -190px;
+  z-index: 2;
   /* position: absolute; */
   /* left: 50%;
   transform: translate(-50%); */
@@ -186,6 +187,7 @@ input {
   text-align: center;
   padding: 20px;
   color: white;
+  z-index: 1;
 }
 .card-small p {
   font-family: "OpenSansLight";
