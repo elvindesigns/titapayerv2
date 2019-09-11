@@ -234,6 +234,11 @@ input {
   clip-path: ellipse(800px 600px at bottom right);
   /* OLD VALUE example: ellipse(245px, 80px, 75px, 30px); */
 }
+@media only screen and (max-width: 1280px) {
+  .features-holder {
+    margin-top: -110px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .features-holder {
     margin-top: -70px;
@@ -386,7 +391,7 @@ footer {
 }
 .login-card input {
   background-color: transparent;
-  border-radius: 7px;
+  border-radius: 50px;
   border: 1px solid white;
   margin-bottom: 20px;
   color: white;
@@ -511,4 +516,54 @@ footer {
   100% {
     transform: translateX(-1822px);
   }
+}
+
+/* DASHBOARD */
+.progress-holder {
+  background-color: #2382ff55;
+  padding: 20px;
+  max-width: 700px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: White;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+.progress-holder ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.progress-holder p {
+  font-size: 15px;
+}
+
+.progressbar-back {
+  height: 5px;
+  /* width: 100%; */
+  background-color: #173560;
+  position: relative;
+  margin: 20px 50px 30px 60px;
+}
+.progressbar-front {
+  position: absolute;
+  height: 5px;
+  width: 0%;
+  background-color: #09cb01;
+  border-radius: 10px;
+  /* padding: 0px 80px; */
+}
+.progressbar-indicator {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 0%;
+  top: -5px;
+  background-color: #09cb01;
+  border-radius: 15px;
 }
