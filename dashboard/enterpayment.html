@@ -4,25 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Enter Payment | TITAPayer</title>
+    <title>TITAPayer | Enter Payment</title>
     <link rel="stylesheet" href="../css/bootstrap-grid.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <section style="width:100%; position: fixed; bottom: 0px; height: 100vh;">
-      <div class="footer popup-footer">
-        <div class="footer-bg-waves footer-bg-waves--item2 js-wave2"></div>
-        <div class="footer-bg-waves footer-bg-waves--item1 js-wave1"></div>
-        <div class="footer-bg-waves footer-bg-waves--item3 js-wave3"></div>
-        <div class="footer-bg"></div>
-      </div>
-    </section>
-    <section id="header">
+    <section id="header" style="min-height:30vh">
       <div class="container">
         <div class="row padding-vertical">
           <div class="col-md-6">
             <div class="nav">
-              <a href="./index.html"
+              <a href="../index.html"
                 ><img class="logo" src="../img/logo.png" alt=""
               /></a>
             </div>
@@ -65,6 +57,28 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section class="container wizard-form">
+      <div class="wizard-howmuch">
+        <h2>How much would you like to transfer?</h2>
+        <p>You Send</p>
+        <div style="display:flex">
+          <input type="number" value="100" />
+          <a class="exbtn" href=""
+            ><img src="../img/united-states.png" alt="" /> <span>USD</span></a
+          >
+        </div>
+        <p>Recepient Gets</p>
+        <div style="display:flex">
+          <input type="number" value="363520" />
+          <a class="exbtn" href=""
+            ><img src="../img/nigeria.png" alt="" /> <span>NGN</span></a
+          >
+        </div>
+        <p>Exchange Rate : <span class="exch">1 USD = 353.24 NGN</span></p>
+        <p></p>
+        <a class="createaccount continue" href="">CONTINUE →</a>
       </div>
     </section>
   </body>
